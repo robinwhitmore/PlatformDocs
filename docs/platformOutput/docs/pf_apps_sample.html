@@ -3,9 +3,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Weebly is a powerful drag and drop website creator that allows people to quickly and easily set up a site, blog, or online store. As a developer, you’ll reac...">
-<meta name="keywords" content="getting started,  ">
-<title>Get Started with Apps | Weebly Developer Documentation</title>
+<meta name="description" content="​This page contains downloadable sample application bundles. Feel free to download, inspect, and modify any of these applications. Each application comes in ...">
+<meta name="keywords" content="getting startedelementsbackend services,  ">
+<title>Sample Applications | Weebly Developer Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -35,7 +35,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="robinwhitmore.github.iofeed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4006feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -98,7 +98,7 @@
                 
                 
                 
-                <li class="active"><a href="home.html">Develop Apps</a></li>
+                <li><a href="home.html">Develop Apps</a></li>
                 
                 
                 
@@ -122,7 +122,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Platform Developer Docs feedback&body=I have some feedback about the Get Started with Apps page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:rwhitmore@weebly.com?subject=Weebly Platform Developer Docs feedback&body=I have some feedback about the Sample Applications page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -140,7 +140,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Get Started with Apps">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Sample Applications">{title}</a></li>',
                     noResultsText: 'No results',
                             limit: 10,
                             fuzzy: true,
@@ -176,7 +176,7 @@
             
             
             
-            <li class="active"><a href="home.html">Get Started with Developing Apps</a></li>
+            <li><a href="home.html">Get Started with Developing Apps</a></li>
             
             
             
@@ -190,7 +190,7 @@
             
             
             
-            <li><a href="pf_apps_sample.html">Sample Applications</a></li>
+            <li class="active"><a href="pf_apps_sample.html">Sample Applications</a></li>
             
             
             
@@ -426,7 +426,7 @@
     <!-- Content Column -->
     <div class="col-md-9">
         <div class="post-header">
-   <h1 class="post-title-main">Get Started with Apps</h1>
+   <h1 class="post-title-main">Sample Applications</h1>
 </div>
 
 
@@ -434,7 +434,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Weebly is a powerful drag and drop website creator that allows people to quickly and easily set up a site, blog, or online store. As a developer, you’ll reach over 40 million users looking to purchase apps to power their businesses. You'll work with Weebly's Elements API to create new integrations and elements, extending the features Weebly offers to help meet our user's many needs. You'll be given access to APIs, code samples, and snippets to help you easily and quickly create new, and useful apps for Weebly users.</div>
+    <div class="summary">​This page contains downloadable sample application bundles. Feel free to download, inspect, and modify any of these applications. Each application comes in a working state, and can be downloaded and immediately uploaded into your developer account.</div>
    
 
     
@@ -465,31 +465,71 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="what-are-weebly-apps">What are Weebly Apps</h2>
-<p>Consider an app to be a bundle that contains one or more of the following types of functionality: backend services, snippets, elements, dashboard cards, and themes. Your app can include one or more of these (more on what these are, below). Apps are installable ZIP files accessed from the Weebly App Center, and contain the following:</p>
+  <h2> Bootstrap Element</h2>
+<p> ​A barebones bootstrap element that will get you up and running in the blink of an eye. There is no real functionality in this element, and it is best used as a starting point for beginners. Download it from Github here.</p>
 
-<ul>
-  <li>Code that needs to reside on your customer’s website, such as JavaScript, CSS, and HTML</li>
-  <li>A JSON manifest file that defines configuration metadata for your app</li>
-  <li>Assets used to display and market your app in the App Center.</li>
+<h2>Pricing Chart Element</h2>
+
+<p>A more functional example of an element. This element displays a given number of price plans, each with a given number of features. This example makes use of settings, content fields, Mustache loops, and LESS CSS. It also contains tooltips and a built-in tutorial. Use it in conjunction with our element tutorial! <br />
+Download it from Github <a href="https://github.com/Weebly/price-chart-app">here</a>.</p>
+<figure><img class="docimage" src="images/sh_priceChart.png" alt="" /><figcaption>Weebly Price Chart</figcaption></figure>
+
+<h2>Full Open Source Element Samples on GitHub</h2>
+
+<p>Elements created by Weebly and available in the App Center are also available in their source code at Github.
+    <ul>
+        <li><a href="https://github.com/Weebly/simple-table-app">simple-table-app</a></li>
+        <li><a href="https://github.com/Weebly/accordion-app">accordion-app</a> </li>
+        <li><a href="https://github.com/Weebly/faq-app">faq-app</a> </li>
+        <li><a href="https://github.com/Weebly/counter-app">counter-app</a></li>
+        <li><a href="https://github.com/Weebly/team-cards-app">team-cards-app</a></li>
+        <li><a href="https://github.com/Weebly/call-out-box-app">call-out-box-app</a></li>
+        <li><a href="https://github.com/Weebly/price-chart-app">price-chart-app</a> </li>
+        <li><a href="https://github.com/Weebly/code-block-app">code-block-app</a></li>
+        <li><a href="https://github.com/Weebly/tabs-app">tabs-app</a></li>
+    </ul>
+</p>
+
+<h2>Back-end App Examples</h2>
+<p>This example app uses OAuth to subscribe to webhooks and then logs the webhook notification. There are two versions of the example - one is PHP and the other is NodeJS. Both live in a Git repository that you can clone and run on Heroku.
+    <ul>
+        <li><a href="https://github.com/Weebly/php-webhook-client">PHP</a>: This version contains the server-side code for the application. It can be deployed to a Heroku server or your own server. The <code>application.php</code> file contains the methods for handling OAuth, parsing parameters from a request URL, processing the webhooks payload, and outputting messages from the webhooks to the messages.txt file (found in the <code>messages</code> directory). The <code>index.php</code> file accesses the client ID and secret from environment variables. In the <code>lib/Util/Weebly</code> directory, the <code>WeeblyClient.php</code> file builds and returns the URLs needed for OAuth and for making authenticated API calls. It haslo handles trading the authorization code for the access token. Other files in the <code>lib/Util</code> directory verify the HMAC hash and write log messages. All other files are needed by Heroku or other servers, for example to access third-party libs.</li>
+
+        <li><a href="https://github.com/Weebly/node-webhook-client">NodeJS</a>: This is the NodeJS version of the server side code. It can also be deployed to Heroku. In the apps directory, <code>oauth.js</code> handles the OAuth flow and outputs messages to the <code>/messages/messages.txt</code>. The <code>webhooks-router.jsfile</code> manages the webhooks file and also outputs messages. The <code>utility.js</code> file handles hmac validation and generation. The <code>/middleware/weebly.js</code> file accesses the client ID and secret from environment variables or you can hardcode them in the <code>server.js</code> file. The rest of the files are needed by Heroku or other servers, for example to access third-party libs.</li>
 </ul>
 
-<p>All Weebly apps use a manifest to configure certain aspects of the app, such as name, version, and URLs used for installation and management. Weebly apps that require access to user and site information or otherwise need to access the Weebly API, must implement the OAuth process. This flow allows your customer to grant the app permission to be installed access specific data.</p>
+<p>
+    Download and review the code to better understand how to work with our OAuth implementation and how to work with webhooks. You can also use the examples as a starting point for your own app.</p>
 
-<p>While each type of functionality has its own development process, to start creating your app, read the App Policy Requirements and Development topics. These are the requirements and the development steps that all app types must follow. Then use the topics specific to the type you’re creating to continue your development.</p>
+<p class="proc">To use the sample apps:
+    <ol>
+        <li>If not already done, create a developer account and register this sample app. You'll need the client ID and secret key that gets generated when registering an app in order to use this sample. </li>
+        <li>If using Heroku install the <a href="https://devcenter.heroku.com/articles/heroku-command">Heruko command line interface</a>.</li>
+        <li>Clone the Github repo that contains the Weebly example code (or download the zip).</li>
+        <li>Open the <code>manifest.json</code> file and for the <code>callback_url</code> entries, replace <code>ROOT_URL</code> with a URL that points to your server. For <code>client_id</code>, replace <code>CLIENT_ID</code> with your client ID (which is found on your app's page in the Dev Admin portal). </li>
+        <li>If using Heroku, run the following to set your app's client ID and app's secret key as environment variables. If you're not using Heroku, then set these as variables in your environment, or add them to the code.
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> All app types (other than themes) must be approved by Weebly prior to becoming available in the App Center, where all Weebly users can download/purchase them.</div>
+        <div class="highlighter-rouge"><pre class="highlight"><code>
+            heroku create
+            heroku config:set WEEBLY_CLIENT_ID=[your_apps_client_id]
+            heroku config:set WEEBLY_SECRET_KEY=[your_apps_secret_key]
+            git push heroku master
+            heroku ps:scale web=1
+        </code></pre></div>
+    </li>
+</ol>
+        Both the node and php servers use OAuth to authenticate. In both, the access token in written to the console. You'll need the token to access the API. If using Heroku, you can access the logs using <code>heroku-logs --tail</code>.
+        <br />
+        If you want to run the app from a Weebly site:
+        <ul>
+            <li>Create a zip file that contains only the <code>manifest.json</code> file.</li>
+            <li>Upload the zip to Weebly.</li>
+            <li>Install the uploaded zip to a test site. When you install it, the OAuth process is kicked off.</li>
+        </ul>
+</p>
 
-<h2 id="backend-services-and-snippets">Backend Services and Snippets</h2>
 
-<p>Backend services are apps that integrate directly with Weebly via the REST API to provide some sort of additional functionality, like analyzing eCommerce orders, synching products, or managing site membership. ​One example of a backend app is Paid Members. This app makes it easy to associate site membership with digital goods so that a site owner can sell access to content, like videos or tutorials. In the app (whose interface resides on an external site), the site owner creates rules that associate a product to a specific member group. When a customer attempts to buy that product, the app accesses the Weebly API to create a membership.</p>
-<figure><img class="docimage" src="images/pl_backend_paidmembership.png" alt="" /></figure>
-
-<p>Snippets are similar to backend apps, except they run on the front-end rather than the backend and include code that’s added to every page on the site. For example, an analytics app might include a snippet on every page that gathers metrics.</p>
-
-<p>​To implement a backend service or snippet, you need to create the interface between the Weebly site and the app functionality that lives on your external site. Configuration can be handled from your external site, or you might use an element or a dashboard card.</p>
-
-<p>More about backend services and snippets here.</p>
+</p>
 
 
     <div class="tags">
@@ -499,6 +539,14 @@ $('#toc').on('click', 'a', function() {
         
         
         <a href="tag_getting started.html" class="btn btn-default navbar-btn cursorNorm" role="button">getting started</a>
+        
+        
+        
+        <a href="tag_elements.html" class="btn btn-default navbar-btn cursorNorm" role="button">elements</a>
+        
+        
+        
+        <a href="tag_backend services.html" class="btn btn-default navbar-btn cursorNorm" role="button">backend services</a>
         
         
         
